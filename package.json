@@ -1,7 +1,7 @@
 {
   "name": "viiper",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Installation - Clone project - **npm install** (This will install the package.json dependencies) - **gulp compileSass** (This will create the css folder containing application.css and the source map) - **gulp watchSass** (This will compile your Sass to css)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,13 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-sewell/Viiper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/o-sewell/Viiper/issues"
+  },
+  "homepage": "https://github.com/o-sewell/Viiper#readme"
 }
