@@ -43,7 +43,8 @@
       }
 
       @media screen and (min-width: 1000px) {
-        margin-left: em(30px);
+        margin-left: em(20px);
+        padding: 0 em(3px);
       }
 
       &:hover {
@@ -69,9 +70,6 @@
   }
 }
 
-body {
-  background: black;
-}
 
 #search-text-input,
 #button-holder,
