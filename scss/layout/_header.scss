@@ -1,0 +1,120 @@
+.nav {
+  background: white;
+  min-height: em(50px);
+  position: fixed;
+  width: 100%;
+
+  &__ul {
+    padding: 0 em(20px);
+    text-align: center;
+    margin: 0;
+  }
+
+  &__li {
+    display: inline-block;
+    color: black;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    font-size: em(11.5px);
+    text-transform: uppercase;
+    margin: 0 em(3px);
+
+    @media screen and (min-width: 700px) {
+      margin: 0 em(28px);
+      font-size: em(13px);
+  }
+
+    @media screen and (min-width: 1000px) {
+      float: left;
+      margin-top: em(26px);
+    }
+
+    &:first-child {
+      color: white;
+      display: block;
+      background: royalblue;
+      font-size: em(45px);
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      height: 50px;
+
+
+      @media screen and (min-width: 600px) {
+        margin: 0;
+      }
+
+      @media screen and (min-width: 1000px) {
+        margin-left: em(30px);
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &:hover {
+      color: royalblue;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .tilda::after {
+    content: '~';
+    margin-left: 34px;
+  }
+
+  li:nth-child(2) {
+    margin-left: em(50px);
+  }
+}
+
+body {
+  background: black;
+}
+
+#search-text-input,
+#button-holder,
+.glass {
+  display: none;
+}
+
+@media screen and (min-width: 1223px) {
+
+  #search-text-input,
+  #button-holder,
+  .glass {
+    display: inline-block;
+  }
+
+  #search-text-input{
+      border-top:thin solid  #e5e5e5;
+      border-right:thin solid #e5e5e5;
+      border-bottom:0;
+      border-left:thin solid  #e5e5e5;
+      box-shadow:0px 1px 1px 1px #e5e5e5;
+      float:left;
+      height:em(25px);
+      margin: em(14px) 0 0 em(5px);
+      outline:0;
+      padding:.4em 0 .4em .6em;
+      width:183px;
+  }
+
+  #button-holder{
+      background-color:#f1f1f1;
+      border-top:thin solid #e5e5e5;
+      box-shadow:1px 1px 1px 1px #e5e5e5;
+      cursor:pointer;
+      float:left;
+      height:em(25px);
+      margin:em(14px) 0 0 0;
+      text-align:center;
+      width:50px;
+  }
+
+  .glass {
+    margin:4px;
+    width:15px;
+  }
+}

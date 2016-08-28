@@ -370,4 +370,93 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.nav {
+  background: white;
+  min-height: 3.125em;
+  position: fixed;
+  width: 100%; }
+  .nav__ul {
+    padding: 0 1.25em;
+    text-align: center;
+    margin: 0; }
+  .nav__li {
+    display: inline-block;
+    color: black;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    font-size: 0.71875em;
+    text-transform: uppercase;
+    margin: 0 0.1875em; }
+    @media screen and (min-width: 700px) {
+      .nav__li {
+        margin: 0 1.75em;
+        font-size: 0.8125em; } }
+    @media screen and (min-width: 1000px) {
+      .nav__li {
+        float: left;
+        margin-top: 1.625em; } }
+    .nav__li:first-child {
+      color: white;
+      display: block;
+      background: royalblue;
+      font-size: 2.8125em;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      height: 50px; }
+      @media screen and (min-width: 600px) {
+        .nav__li:first-child {
+          margin: 0; } }
+      @media screen and (min-width: 1000px) {
+        .nav__li:first-child {
+          margin-left: 1.875em; } }
+      .nav__li:first-child:hover {
+        color: white; }
+    .nav__li:hover {
+      color: royalblue; }
+
+@media screen and (min-width: 1000px) {
+  .tilda::after {
+    content: '~';
+    margin-left: 34px; }
+  li:nth-child(2) {
+    margin-left: 3.125em; } }
+
+body {
+  background: black; }
+
+#search-text-input,
+#button-holder,
+.glass {
+  display: none; }
+
+@media screen and (min-width: 1223px) {
+  #search-text-input,
+  #button-holder,
+  .glass {
+    display: inline-block; }
+  #search-text-input {
+    border-top: thin solid  #e5e5e5;
+    border-right: thin solid #e5e5e5;
+    border-bottom: 0;
+    border-left: thin solid  #e5e5e5;
+    box-shadow: 0px 1px 1px 1px #e5e5e5;
+    float: left;
+    height: 1.5625em;
+    margin: 0.875em 0 0 0.3125em;
+    outline: 0;
+    padding: .4em 0 .4em .6em;
+    width: 183px; }
+  #button-holder {
+    background-color: #f1f1f1;
+    border-top: thin solid #e5e5e5;
+    box-shadow: 1px 1px 1px 1px #e5e5e5;
+    cursor: pointer;
+    float: left;
+    height: 1.5625em;
+    margin: 0.875em 0 0 0;
+    text-align: center;
+    width: 50px; }
+  .glass {
+    margin: 4px;
+    width: 15px; } }
+
 /*# sourceMappingURL=application.css.map */
