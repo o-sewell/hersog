@@ -373,7 +373,6 @@ html {
 .nav {
   background: white;
   min-height: 3.125em;
-  position: fixed;
   width: 100%; }
   .nav__ul {
     padding: 0 1.25em;
@@ -457,7 +456,57 @@ html {
     margin: 4px;
     width: 15px; } }
 
-body {
-  background: black; }
+.hero {
+  background: pink;
+  text-align: center;
+  height: 100vh;
+  background: url("../images/buildings.jpg") no-repeat top center;
+  background-size: cover; }
+  .hero__heading--container {
+    background: black;
+    border: 2px solid white;
+    height: 15.625em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: .5; }
+  .hero__heading {
+    position: relative;
+    top: 36%;
+    font-size: 2.1875em;
+    padding: 0;
+    margin: 0;
+    color: white;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media screen and (min-width: 700px) {
+      .hero__heading {
+        top: 35%;
+        font-size: 4.0625em;
+        letter-spacing: 13px; } }
+    @media screen and (min-width: 1000px) {
+      .hero__heading {
+        font-size: 5em;
+        top: 35.5%; } }
+  .hero__subheading {
+    position: relative;
+    top: 53%;
+    left: 50%;
+    background: white;
+    width: 18.75em;
+    padding: 5px;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    border-top: 5px solid royalblue;
+    font-size: 0.75em;
+    color: #6C9ADA; }
+    @media screen and (min-width: 700px) {
+      .hero__subheading {
+        top: 48%;
+        font-size: 0.9375em; } }
 
 /*# sourceMappingURL=application.css.map */
