@@ -1,4 +1,13 @@
-
+body {
+  background: #58a;
+  background-image:
+    linear-gradient(white 2px, transparent 0),
+    linear-gradient(90deg, white 2px, transparent 0),
+    linear-gradient(hsla(0,0%,100%,.3)1px, transparent 0),
+    linear-gradient(90deg,hsla(0,0%,100%,.3)1px,transparent 0);
+  background-size: 75px 75px, 75px 75px,
+                   15px 15px, 15px 15px;
+}
 
 .hero {
   background: pink;
@@ -65,3 +74,130 @@
     }
   }
 }
+
+/*.container {
+   @include container;
+   background: linear-gradient(white ,#76B8E4);
+   opacity: .9;
+   overflow: auto;
+   border: 2px solid red;
+   width: 100%;
+}
+*/
+
+.text {
+  padding: em(3px);
+  font-size: em(14px);
+}
+
+
+.info {
+  @include container;
+
+  &__image {
+    @include span(6 of 12);
+      border-top: 2px solid white;
+  }
+
+  &__text {
+    @include span(6 of 12 last);
+    background: linear-gradient(to top,white ,#76B8E4);
+  }
+
+  a {
+    @include span(12 of 12);
+    text-align: center;
+    padding: em(15px);
+    text-decoration: none;
+    background: #76B8E4;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+
+.project {
+  @include container;
+
+  &__image {
+    @include span(6 of 12 last);
+    border-top: 2px solid white;
+  }
+
+  &__text {
+    @include span(6 of 12);
+      background: linear-gradient(45deg,white ,#76B8E4);
+  }
+
+
+    a {
+      @include span(12 of 12);
+      text-align: center;
+      padding: em(15px);
+      text-decoration: none;
+      background: #76B8E4;
+      color: white;
+      text-transform: uppercase;
+    }
+}
+
+
+@media screen and (min-width: 780px) {
+
+  .wrapper {
+    @include container(85%);
+  }
+
+  .info {
+      @include span(3 of 12);
+      margin-top: -20px;
+
+      &__image {
+        @include span(12 of 12);
+      }
+
+      &__text {
+        @include span(12 of 12);
+      }
+  }
+
+  .project {
+    @include span(3 of 12);
+    margin-top: -20px;
+
+    &__image {
+      @include span(12 of 12);
+    }
+
+    &__text {
+      @include span(12 of 12);
+    }
+
+    &:nth-child(3n){
+      @include span(last 3 of 12);
+  }
+}
+
+}
+
+  .title {
+    text-transform: uppercase;
+    margin-left: em(10px);
+  }
+
+  .heading {
+    margin-left: em(30px);
+    font-size: em(10px);
+    text-transform: uppercase;
+  }
+
+  .about {
+    text-align: center;
+    margin-left:0;
+  }
+
+  hr {
+    width: 100px;
+    border: 0;
+    border-top: 1px solid blue;
+  }

@@ -2,3 +2,10 @@
 @function em($target, $context: $base__font-size) {
 	@return ($target / $context) * 1em;
 }
+
+
+$susy: (
+ columns: 12,
+ gutters: .25,
+ gutter-position: inside,
+);
